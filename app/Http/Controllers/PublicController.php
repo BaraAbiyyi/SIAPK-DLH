@@ -165,7 +165,7 @@ class PublicController extends Controller
         }
 
         try {
-            $mailTo = config('mail.contact_to', env('CONTACT_MAIL_TO', 'sitinoviadesi666@gmail.com'));
+            $mailTo = config('mail.contact_to', env('CONTACT_MAIL_TO', 'dlhkabupatentegal@gmail.com'));
 
             Mail::to($mailTo)->send(new KontakPesan(
                 $validated['nama'],

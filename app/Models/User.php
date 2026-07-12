@@ -18,6 +18,15 @@ class User extends Authenticatable
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 
+    /**
+     * Route notifications for the mail channel.
+     * Mengarahkan email riset sandi ke email DLH.
+     */
+    public function routeNotificationForMail(\Illuminate\Notifications\Notification $notification): array|string
+    {
+        return env('CONTACT_MAIL_TO', 'dlhkabupatentegal@gmail.com');
+    }
+
     public function kegiatan(): HasMany
     {
         return $this->hasMany(Kegiatan::class);
