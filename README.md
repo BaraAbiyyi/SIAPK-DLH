@@ -1,8 +1,8 @@
 # SIPK-DLH ADMIN
-Nama : Bara Abiyyi Muslimin
-Nim : 23215051
-tempat pkl : DLH Kab.Tegal
-Teknologi : laravel
+Nama : Bara Abiyyi Muslimin <br>
+Nim : 23215051<br>
+tempat pkl : DLH Kab.Tegal<br>
+Teknologi : laravel<br>
 
 Sistem Pelaporan Kegiatan Dinas Lingkungan Hidup — Admin Internal.
 
@@ -20,5 +20,5 @@ php artisan storage:link
 php artisan serve
 ```
 
-**Login:** `/internal-dlh-login`  
+**akses Login:** `/internal-dlh-login`  
 **Email:** `admin@dlh.go.id` | **Password:** `admin123`
